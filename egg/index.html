@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first react</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="aici"></div>
+
+    <script>
+      console.log("salut");
+      const aici = document.querySelector("#aici");
+      const incaceva = React.createElement("h1", null, "Inca o incercare");
+      const App = React.createElement(
+        "div",
+        null,
+        "React si JavaScript",
+        incaceva
+      );
+      ReactDOM.render(App, aici);
+    </script>
+  </body>
+</html>
